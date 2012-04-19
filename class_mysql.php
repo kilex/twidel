@@ -10,11 +10,11 @@
 class class_mysql {
 	public $link;
     public $linkrepl;
-    var $servers=array("mysql.hostinger.ru");
-    var $repl=array("mysql.hostinger.ru");
-   	private $username='u763822110_user';
-   	private $passwd='none47';
-   	private $dbname='u763822110_td';
+    var $servers=array("host");
+    var $repl=array("host");
+   	private $username='login';
+   	private $passwd='pass';
+   	private $dbname='db';
 	function __construct($customserver='',$customdb='',$customlogin='',$custompass='') {
 		if ($customserver AND $customlogin AND $custompass AND $customdb) {
             $this->servers=array("$customserver");
